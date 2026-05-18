@@ -23,4 +23,5 @@ urlpatterns =[
     path('admin/', admin.site.urls),
     path('home/',home_page),
     # path("api-auth/", include("rest_framework.urls"))  #only if uwant to add login logout
+    path('api/v1/',include('api.urls'))
 ]
